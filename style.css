@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mukta', sans-serif;
+}
+
+
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo-mario {
+    width: 350px;
+}
+
+.imagem-mario-luigi {
+    height: 650px;
+}
+
+.caixa-principal {
+    width: 40%;
+}
+
+.caixa-video-mario {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+video {
+    position: fixed;
+    top: 0;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.mascara-video {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+}
+
+p {
+    color: white;
+    margin-top: 10px;
+    font-size: 26px;
+}
+
+button {
+    height: 50px;
+    width: 250px;
+    background: #C51111;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background 0.3s, filter 0.3s;
+  }
+  
+  button:hover {
+    background: #640404; /* Cor de fundo mais escura ao passar o mouse */
+    filter: brightness(0.8); /* Diminui a luminosidade em 20% (80% do original) */
+  }
+  
+
+  .fale-conosco {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 20px;
+    position: fixed;
+    left: -320px;
+    transition: left 1s linear;
+    z-index: 4;
+}
+
+.fale-conosco input,
+.fale-conosco textarea,
+.fale-conosco button
+ {
+    text-align: center; /* Centraliza o texto dentro dos campos de entrada, da área de texto e do botão */
+}
+
+.fale-conosco button {
+    cursor: pointer;
+}
+
+.fale-conosco {
+    background: #c8c6c6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: fixed;
+    left: -320px;
+    transition: left 1s linear;
+    z-index: 4;
+}
+
+.fale-conosco input,
+.fale-conosco textarea,
+.fale-conosco button {
+    height: 40px;
+    border-radius: 3px;
+    border: 1px solid rgb(225, 3, 3);
+    padding-left: 10px;
+    margin-bottom: 10px; /* Adiciona um espaço entre os elementos */
+    outline-color: chartreuse;
+}
+
+.fale-conosco button {
+    cursor: pointer;
+    max-width: 200px;
+}
+
+
+textarea {
+    height: 90px;
+    width: 300px;
+    border-radius: 3px;
+    border: 1px solid rgb(248, 5, 5);
+    padding: 10px;
+    outline-color: chartreuse;
+}
+
+.mascara-form {
+    visibility: hidden;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+}
